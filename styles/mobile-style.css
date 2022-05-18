@@ -1,0 +1,169 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+:root {
+    --very-dark-blue: #1d1e35;
+    --soft-red: #f47c57;
+    --soft-violet: #af67e9;
+    --soft-blue: #6565e7;
+    --very-dark-grayish-blue: #4a4b5e;
+    --dark-grayish-blue: #787887;
+    --light-grayish-blue: #e7e7e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0 10px;
+    max-height: auto;
+}
+
+body {
+    height: auto;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 200px auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container__woman-online {
+    position: absolute;
+    top: -135px;
+    left: calc(50% - 150px);
+    width: 300px;
+    z-index: 1;
+}
+
+.image-container__woman-online-shadow {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 150px);
+    width: 300px;
+    z-index: 1;
+}
+
+.faq-container {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 160px 15px 60px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 20px;
+    box-shadow: 0 15px 45px var(--very-dark-blue);
+}
+
+.faq-container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.faq-card__container {
+    margin: 0 auto;
+}
+
+.faq-card__container hr {
+    width: 90%;
+    margin: 10px auto 0;
+}
+
+.faq-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 20px auto 10px;
+}
+
+.faq-card__title {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.faq-card__title:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.faq-card__title--activate {
+    padding-left: 5px;
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.faq-card__title--desactivate {
+    transition: 1s;
+}
+
+
+.faq-card__arrow {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-image: url(../images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo de la flecha cuando se le hace click por primera vez */
+
+.faq-card__arrow--activate {
+    transform: rotate(180deg); 
+    transition: .4s;
+}
+
+/* Estilo de la flecha cuando se le hace click por segunda vez */
+
+.faq-card__arrow--desactivate {
+    transform: rotate(180deg);
+    transition: .2s;
+}
+
+.faq-card__arrow:hover {
+    cursor: pointer;
+}
+
+/* contenido de la descripción de cada card */
+
+.faq-card__container p {
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 8px 0 2px;
+    color: var(--dark-grayish-blue);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Estados  de la card */
+
+.faq-card__container p.activate {
+    display: flex;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.faq-card__container p.desactivate {
+    display: none;
+}

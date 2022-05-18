@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="./images/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/mobile-style.css"/>
+    <link rel="stylesheet" href="./styles/desktop-style.css" media="(min-width: 1086px)"/>
+    <link rel="stylesheet" href="./styles/tablet-style.css" media="(min-width: 689px)"/>
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+   
+    <title>FAQ Accordion</title>
+</head>
+<body>
+    <main class="container">
+        <div class="image-container">
+            <img src="./images/illustration-woman-online-mobile.svg" alt="woman online" class="image-container__woman-online"/>
+            <img src="./images/bg-pattern-mobile.svg" alt="woman online shadow" class="image-container__woman-online-shadow"/>
+        </div>
+        <section class="faq-container">
+            <h1>FAQ</h1>
+            <article class="faq-card__container">
+                <div class="faq-card">
+                    <h2 class="faq-card__title" id="q1">How many team members can I invite?</h2>
+                    <span class="faq-card__arrow" id="arrow1"></span>
+                </div>
+                <p class="desactivate" id="answer1">All you want!.</p>
+                <hr/>
+            </article>
+            <article class="faq-card__container">
+                <div class="faq-card">
+                    <h2 class="faq-card__title" id="q2">What is the maximum file upload size?</h2>
+                    <span class="faq-card__arrow" id="arrow2"></span>
+                </div>
+                <p  class="desactivate" id="answer2"> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                <hr/>
+            </article>
+            <article class="faq-card__container">
+                <div class="faq-card"> 
+                    <h2 class="faq-card__title" id="q3">How do I reset my password?</h2>
+                    <span class="faq-card__arrow" id="arrow3"></span>
+                </div>
+                <p  class="desactivate" id="answer3">We send you an email and you generate a new password.</p>
+                <hr/>
+            </article>
+            <article class="faq-card__container">
+                <div class="faq-card">
+                    <h2 class="faq-card__title" id="q4">Can I cancel my suscription?</h2>
+                    <span class="faq-card__arrow" id="arrow4"></span>
+                </div>
+                <p  class="desactivate" id="answer4">Yes, you can.</p>
+                <hr/>
+            </article>
+            <article class="faq-card__container">
+                <div class="faq-card">
+                    <h2 class="faq-card__title" id="q5">Do you provide additional support?</h2>
+                    <span class="faq-card__arrow" id="arrow5"></span>
+                </div>
+                <p  class="desactivate" id="answer5">Yes. All day, all days.</p>
+                <hr/>
+            </article>
+        </section>
+    </main>
+    <script src="./app.js">
+    </script>
+</body>
+</html>

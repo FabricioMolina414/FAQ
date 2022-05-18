@@ -1,0 +1,57 @@
+/** Estilos para desktop **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    font-size: 75%;
+}
+
+body {
+    min-height: auto;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    max-width: 80vw;
+    max-height: auto;
+    margin: 40px auto 10px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 20px;
+    box-shadow: 0 15px 45px var(--very-dark-blue);
+}
+
+.faq-container {
+    position: relative;
+    right: -245px;
+    background-color: none;
+    box-shadow: none;
+}
+
+.image-container {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+
+.image-container__woman-online {
+    width: 500px;
+}
+
+.image-container__woman-online-shadow {
+    position: absolute;
+    top: 100px;
+    width: 500px;
+}
+
+h1 {
+    position: absolute;
+    top: 70px;
+}
